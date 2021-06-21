@@ -206,10 +206,6 @@ public class Screen extends JPanel implements ActionListener, KeyListener{
                 case KeyEvent.VK_W: //Pressionado na tecla W
                     p.setDy(-vel);
                     break;
-                case KeyEvent.VK_SPACE: //Pressionado na tecla SPACE
-                    p.setDx(0);
-                    p.setDy(0);
-                    break;
             }
         }
         else if ((p.getX()<0 && p.getX()> 400) || (p.getY()< 0 && p.getY()>400) || ((p.getX()== 400) && (p.getY()== 400)) || (p.getY() == 0))
