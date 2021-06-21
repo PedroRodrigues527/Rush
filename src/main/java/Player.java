@@ -1,5 +1,6 @@
 import java.awt.Graphics;
 import java.awt.Rectangle;
+import java.util.Random;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -33,6 +34,7 @@ public class Player extends Rectangle {
         {
             setDx(0);
             setDy(0);
+            
             //System.out.println("GameOver!");
             //System.out.println("Colisao: "+" x -> "+ getX() +" y -> "+ getY()); //debug!
         }

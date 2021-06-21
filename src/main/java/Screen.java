@@ -32,7 +32,7 @@ public class Screen extends JPanel implements ActionListener, KeyListener{
     private double vel;
     Random rx = new Random();
     Timer t = new Timer(10,this);
-    Player p = new Player(10,10,10,10,0,0);
+    Player p = new Player(rx.nextInt(400),rx.nextInt(400),10,10,0,0);
     Food food = new Food(rx.nextInt(400),rx.nextInt(400),10,10,0,0);
     
     public Screen()
@@ -107,7 +107,7 @@ public class Screen extends JPanel implements ActionListener, KeyListener{
     {
         if (checkBorder())
         {
-            p = new Player(10,10,10,10,0,0);
+            p = new Player(rx.nextInt(400),rx.nextInt(400),10,10,0,0);
             food = new Food(rx.nextInt(400),rx.nextInt(400),10,10,0,0);
             p.setDx(0);
             p.setDy(0);
